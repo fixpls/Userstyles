@@ -12,9 +12,9 @@ Styled pages:
  * Board Logs
  * Options and Boardslist popups
  * Catalog (hacky)
+ * Overboard
 
 Pages TODO:
  * Homepage
  * Boardslist
- * Overboard
  * Control Panel
