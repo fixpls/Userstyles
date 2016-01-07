@@ -1,0 +1,653 @@
+html {
+  background: #090D0F;
+  overflow-x: hidden;
+}
+body {
+  background: #090D0F;
+  color: #F8F8F8;
+}
+.page-head {
+  z-index: 1;
+}
+/* Move board banner and title to sidebar */
+@media (min-width: 1280px) {
+  .page-head {
+    position: fixed;
+    max-width: 300px !important;
+    right: 5px !important;
+    top: 9px;
+    z-index: 1;
+  }
+  .index-threads {
+    margin-right: 312px !important;
+  }
+}
+.page-title, .page-desc  {
+  color: #F8F8F8 !important;
+}
+main {
+  background: #000;
+  padding: 0;
+}
+.index-threads {
+  background: #090D0F;
+}
+.thread-list {
+  padding-top: 30px !important; /* REMOVE when there's something above the thread */
+  border-right: 1px solid rgba(11, 19, 22, 0.9) !important;
+}
+.thread {
+  display: block;
+  padding: 0px !important;
+  padding-left: 2px !important;
+}
+.thread-interior {
+  background: rgba(13, 17, 20, 0.5);
+  border: 1px solid rgba(11, 19, 22, 0.9);
+  border-right: none;
+}
+.thread-reply {
+  margin-left: 2em;
+}
+.thread-replies-omitted {
+  color: rgba(255, 255, 255, 0.5);
+}
+/* Compact Threads */
+.post-content::after{
+    content: none;
+}
+.post-container.op-container, .op-container .post-content-wrapper {
+    display: inline;
+}
+.thread-interior{
+    clear: both;
+}
+/* Post Form */
+#post-form {
+  top: auto;
+  bottom: 5px;
+  right: 5px;
+}
+form.form-post {
+  background: transparent;
+  border: none;
+}
+form.form-post .form-legend {
+  background: rgba(2, 7, 9, 0.9) !important;
+}
+input, select {
+  background: rgba(0, 0, 0, 0.9);
+  color: #CCC;
+}
+form.form-post textarea {
+  background: transparent;
+  color: #FFF;
+}
+form.form-post .row-post {
+  background: rgba(0, 0, 0, 0.9);
+  border-color: #0B1316;
+}
+form.form-post button.field-submit, form.form-post div.row-file {
+  background: rgba(9, 13, 15, 0.9);
+  color: #DDD;
+}
+form.form-post button.field-submit:hover, form.form-post div.row-file:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+form.form-post .row-double {
+  background: transparent;
+}
+form.form-post .ui-resizable-handle {
+  background-color: rgba(45, 60, 70, 0.8);
+}
+form.form-post .menu-icon-close {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-color: #0B1316;
+}
+form.form-post .menu-icon-close:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-color: #3090B5;
+}
+.dz-container {
+  background: transparent;
+  border-color: #0B1316;
+}
+form.form-post select.field-capcode {
+  height: auto;
+  border-color: #0B1316;
+}
+/* Captcha Area */
+form.form-post .row-captcha {
+  background: transparent;
+}
+form.form-post .row-captcha .field-label {
+  background: #FFF;
+}
+form.form-post .field-control, form.form-post .row-captcha, form.form-post button.field-submit {
+  border-color: #0B1316;
+}
+form.form-post .form-fields {
+  border-color: #0B1316 !important;
+}
+/* Posts */
+.post {
+  padding: 0.3em;
+}
+.post-details {
+  background: rgba(1, 5, 8, 0.8);
+  border-bottom: 1px solid #0B1316;
+  line-height: 1.4em;
+  padding: 0.2em 0.6em;
+}
+.post-attachments {
+  background: transparent !important;
+}
+.post-content-wrapper {
+  padding-top: 0.1em;
+}
+.post-interior {
+  border-style: solid;
+  border-color: #0B1316;
+  background: rgba(13, 17, 20, 0.9);
+  background-image: linear-gradient(rgba(9, 13, 16, 0.8), rgba(9, 13, 16, 0.8));
+  border-width: 1px;
+}
+.reply {
+  margin: 0;
+}
+.post-subject {
+  color: #B88CD1;
+}
+.author {
+  color: #D63E34;
+}
+.tripcode {
+  color: #D4B63C;
+}
+.capcode {
+  color: #F0B;
+}
+blockquote.ugc {
+  margin: 0.3em 1.6em;
+}
+.post-detail.detail-icon .fa {
+  color: #0EF;
+}
+/* Post Formatting */
+.post blockquote p {
+  color: rgb(150,200,59);
+}
+.post h1, .post h2, .post h3, .post h4, .post h5, .post h6 {
+  color: #F20 !important;
+}
+blockquote.post thead tr, blockquote.post tbody tr:nth-of-type(2n) {
+  background-color: rgba(83, 189, 177, 0.1);
+}
+hr {
+  border: 1px solid #53BDB1 !important;
+}
+/* REMOVE when Infinity Next gets proper syntax highlighted code blocks */
+pre code, code pre.prettyprint {
+  background: rgba(0,0,0,.1) !important;
+  border: 1px solid rgba(0,0,0,0.5) !important;
+  color: #F8F8F8 !important;
+}
+blockquote.ugc pre { /* legacy */
+  background: transparent;
+}
+/* OP Post */
+.op-container {
+  border: none !important;
+}
+.op-container .post-interior {
+  background: transparent;
+  border: none;
+}
+.op-container .post-details {
+  padding-left: 0.6em !important;
+}
+.op-container .post-attachments {
+  margin: 2px 20px !important;
+}
+/* Post Actions: */
+.post-actions {
+  padding-right: 0.2em;
+}
+div.post-action-tab {
+  border: 1px solid #0B1316;
+}
+li.post-action-group {
+  background: #0c1013;
+  border-color: #0B1316;
+}
+li.post-action {
+  border-color: #090c0e;
+}
+a.post-action-link:hover {
+  background: #0c1013;
+}
+/* Link colors */
+a, .detail-item, div.post-action-tab {
+  color: #53BDB1 !important;
+}
+a:hover, .detail-item:hover, div.post-action-tab:hover, nav.boardlist .boardlist-item a:hover, nav.gnav li.gnav-item .gnav-link:hover,  a.pagination-button:hover, a.pagination-button.go-to-bottom:hover,  nav.gnav .flyout-item:hover {
+  color: #3090B5 !important;
+}
+/* Post Previews */
+div.post-hover.post-container {
+  padding-top: 0px;
+  margin-top: 0px;
+  background: rgba(13, 17, 20, 1);
+  background-image: linear-gradient(rgba(9, 13, 16, 0.8), rgba(9, 13, 16, 0.8));
+  box-shadow: none;
+}
+div.post-hover.op-container {
+  border: 1px solid #0B1316 !important;
+}
+
+/* Boardlist */
+footer nav.boardlist {
+  position: fixed;
+  z-index: 999;
+  overflow: hidden;
+  height: 16px;
+  line-height: 16px;
+  display: block;
+  width: 100%;
+  top: 0;
+/*   background: rgba(9, 13, 15, 0.8); */
+  pointer-events: none; /* REMOVE catalog hack */
+  background: transparent;
+  border-color: #0D1114;
+  color: #F8F8F8;
+  padding: 0 5px 0 58px;
+  font-size: 12px;
+}
+nav .boardlist-row {
+  pointer-events: all; /* REMOVE catalog hack */
+}
+nav {
+  font-family: sans-serif;
+}
+footer nav.boardlist a{
+  color: #F8F8F8 !important;
+}
+nav.boardlist .boardlist-categories, nav.boardlist .boardlist-category, nav.boardlist .boardlist-items, nav.boardlist .boardlist-item {
+  height: 16px;
+  line-height: 16px;
+  vertical-align: top;
+}
+nav.boardlist .boardlist-row {
+  margin: 0;
+}
+nav.boardlist .boardlist-row li.boardlist-category:nth-of-type(2) {
+  display: none;
+}
+nav.boardlist .boardlist-item::after {
+  margin: 0;
+}
+html.js .row-boards .boardlist-item::after {
+  margin: 0 -0.25px !important;
+}
+html.js .row-links .boardlist-item a {
+  font-size: 0;
+}
+html.js .row-links .boardlist-item::after {
+  content: "";
+}
+html.js .row-links .boardlist-item a::before {
+  font: 9pt FontAwesome;
+}
+html.js .row-links .boardlist-item:nth-of-type(1) a::before {
+  content: ""; /* home */
+}
+html.js .row-links .boardlist-item:nth-of-type(2) a::before {
+  content: ""; /* boardslist */
+}
+html.js .row-links .boardlist-item:nth-of-type(3) a::before {
+  content: ""; /* overboard */
+}
+html.js .row-links .boardlist-item:nth-of-type(4) a::before {
+  content: ""; /* control panel */
+}
+html.js .row-links .boardlist-item:nth-of-type(5) a::before {
+  content: ""; /* create board */
+}
+html.js .row-links .boardlist-item:nth-of-type(6) a::before {
+  content: ""; /* adventure */
+}
+
+/* Boardlist and Options buttons */
+nav.gnav {
+  position: fixed;
+  z-index: 1001 !important;
+  height: 0;
+  top: 0;
+  border-bottom: none;
+}
+nav.gnav .grid-container {
+  max-width: none;
+  padding: 0;
+  margin: 0;
+}
+nav.gnav div.gnav-binder {
+  padding: 0 0 0 5px;
+}
+nav.gnav ul.gnav-groups, nav.gnav li.gnav-group, nav.gnav ul.gnav-items, nav.gnav li.gnav-item {
+  line-height: 16px;
+  height: 0;
+  overflow: visible;
+  font-size: 12px;
+}
+nav.gnav li.gnav-item {
+  display: none;
+}
+nav.gnav li.gnav-item.item-boards, nav.gnav li.gnav-item.item-config {
+  display: inline;
+  margin-right: 5px;
+}
+li.gnav-item.item-config.require-js {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+nav.gnav li.gnav-item .gnav-link {
+  z-index: 1001 !important;
+  font-size: 1em;
+  font-family: Arial,Helvetica,sans-serif !important;
+  margin: 0;
+  padding: 0;
+  color: #F8F8F8 !important;
+}
+nav.gnav li.item-config .gnav-link::before {
+  font: 9pt FontAwesome;
+  content: " ";
+}
+nav.gnav li.item-boards .gnav-link::before {
+  content: "[";
+  opacity: 0.6;
+  padding-right: 1px;
+  color: #F8F8F8;
+}
+nav.gnav li.item-boards .gnav-link::after {
+  content: "]";
+  opacity: 0.6;
+  padding-left: 1px;
+  color: #F8F8F8;
+}
+nav.gnav .flyout {
+  margin: 16px 0 0 0;
+  left: -15px;
+}
+nav.gnav .flyout-container {
+  background: rgba(13, 17, 20, 0.9) !important;
+  background-image: linear-gradient(rgba(9, 13, 16, 0.8), rgba(9, 13, 16, 0.8))  !important;
+  border-radius: 0;
+  border-right: 1px solid rgba(0, 0, 0, 0.15);
+  border-left: 1px solid rgba(0, 0, 0, 0.15);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  font-size: 90%;
+}
+nav.gnav .flyout-header {
+  border-bottom: 1px solid #0B1316;
+}
+nav.gnav .flyout-col {
+  padding: 0 0 10px 0;
+  border-left: 1px solid rgba(0, 0, 0, 0.15);
+}
+nav.gnav .flyout-col[style="display: block;"] + .flyout-col {
+  display: none;
+}
+nav.gnav .flyout-col-title {
+  color: #F8F8F8;
+}
+nav.gnav .flyout-item:hover {
+  background: transparent;
+}
+
+/* Attach Go-to-bottom button to NavBar */
+main nav .pagination-buttons.buttons-pages {
+  position: fixed;
+  z-index: 1001 !important;
+  top: 0px;
+  right: 0px;
+  margin: 0px !important;
+  padding: 0px;
+  padding-right: 5.5em;
+  pointer-events: none; /* REMOVE catalog hack */
+}
+main a.pagination-button.go-to-bottom {
+  pointer-events: all; /* REMOVE catalog hack */
+  color: #F8F8F8 !important;
+  display: inline;
+  border: none;
+  background: transparent;
+  font-size: 1em;
+  font-family: Arial,Helvetica,sans-serif !important;
+  font-weight: normal;
+  padding: 0.25em !important;
+}
+main a.pagination-button:not(.go-to-bottom) {
+  display: none;
+}
+main a.pagination-button:hover {
+  background: transparent;
+}
+main nav.pagination.pagination-catalog {
+  margin: 0;
+  padding: 0;
+}
+
+/* Footer */
+footer {
+  z-index: 999 !important;
+  overflow-x: hidden !important;
+}
+
+/* Attach Footer Pagination Buttons to NavBar */
+footer nav .pagination-buttons.buttons-pages {
+  position: fixed;
+  z-index: 1000;
+  top: 0px;
+  right: 0px;
+  margin: 0px !important;
+  padding: 0px;
+  padding-right: 12em;
+  pointer-events: none; /* REMOVE catalog hack */
+}
+footer .pagination-button {
+  pointer-events: all; /* REMOVE catalog hack */
+  color: #F8F8F8 !important;
+  display: inline;
+  border: none;
+  background: transparent;
+  font-size: 1em;
+  font-family: Arial,Helvetica,sans-serif !important;
+  font-weight: normal;
+  padding: 0.25em !important;
+}
+footer .pagination-button:hover {
+  background: transparent !important;
+  margin: 0;
+  border: none;
+}
+
+/* Index Page buttons */
+footer .pagination.pagination-full.pagination-catalog {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  background: rgba(9,13,15,0.8);
+  margin: 0 !important;
+  margin-bottom: -0.2em !important;
+}
+footer .buttons-pages, footer .pagination-pages, footer div.pagination-buttons {
+  display: inline-block !important;
+  float: none !important;
+  margin: 0px;
+}
+footer .pagination-pages {
+  margin-bottom: -0.6em !important;
+  margin-top: -0.3em !important;
+}
+footer .pagination-active {
+  color: #F8F8F8 !important;
+}
+footer a.pagination-link {
+  padding: 0.25em 0.12em;
+}
+footer .buttons-after .pagination-button, footer .buttons-before .pagination-button {
+  color: #53BDB1 !important;
+}
+footer .pagination-button:disabled {
+  color: #FFF !important;
+}
+footer ul.pagination-pages::before, footer ul.pagination-pages::after, footer li.pagination-page::after {
+  color: #34345C !important;
+}
+/* Hide the rest of the Footer */
+#footnotes {
+  display: none;
+}
+
+/* Options Menu */
+#js-config {
+  background: rgba(9, 13, 15, 0.9);
+  color: #F8F8F8;
+  border: 1px solid #0B1316;
+  border-radius: 0;
+  padding: 5px;
+}
+#js-config .config-title {
+  background: transparent;
+  color: #F8F8F8;
+  text-shadow: none;
+  border :none;
+}
+#js-config .config-table {
+  background: #090D0F;
+  border: 1px solid #0B1316 !important;
+  border: none;
+}
+#js-config .config-cell.cell-nav {
+  border-right: transparent;
+}
+#js-config .config-table td {
+  color: #53BDB1;
+}
+#js-config .config-table li.config-nav-item:hover {
+  background:  transparent;
+  color:#3090B5;
+}
+#js-config .config-table li.config-nav-item {
+  border-right: 1px solid #0B1316;
+}
+#js-config .config-table li.config-nav-active {
+  border-right: 0px;
+  background: transparent !important;
+}
+#js-config .config-table li {
+  border-bottom: 1px solid #0B1316;
+}
+#js-config .config-table li:last-child {
+  border-bottom: none;
+}
+#js-config .config-cell.cell-fields {
+  color: #F8F8F8 !important;
+}
+#js-config .config-option {
+  background: #000;
+  color: #FFF;
+}
+
+/* Magic tricks to prevent anchors from jumping posts to the
+ * absolute top of the screeen, stopping posts from being
+ * obscured by the fixed nav bar.
+ */
+@media (-webkit-min-device-pixel-ratio:0) {
+  a[name]:before { /* webkit needs this to fix No. jump offset */
+    display: block;
+    content: " ";
+    margin-top: -11px;
+    height: 11px;
+    visibility: hidden;
+  }
+}
+li.post-authorid, li.post-id { /* fixes legacy threads with #IDs */
+  padding-top: 15px;
+  margin-top: -15px;
+}
+div.post-container { /* fixes link+backlink jump offset */
+  padding-top: 10px;
+  margin-top: -10px;
+  background: transparent;
+  border: none;
+}
+.op-container li.post-authorid, .op-container li.post-id {
+  padding-top: 20px;
+  margin-top: -20px;
+}
+
+/* Board Logs */
+.board-logs .smooth-box {
+  margin-top: 3em;
+  background: rgba(13, 17, 20, 0.5);
+  border: 1px solid #0B1316;
+  border-radius: 0px;
+}
+.board-logs thead {
+  background: rgba(1, 5, 8, 0.8);
+  border: 1px solid #0B1316;
+}
+.board-logs tr {
+  border: 1px solid #0B1316;
+}
+
+/* Catalog */
+main.index-catalog {
+  z-index: 999; /* REMOVE catalog hack */
+  background: #090D0F;
+}
+main.index-catalog .thread {
+  background: rgba(13,17,20,.5);
+  border: none;
+}
+main.index-catalog .post-container {
+  background: #0D1114;
+  background-image: linear-gradient(rgba(9, 13, 16, 0.8), rgba(9, 13, 16, 0.8));
+  border: 1px solid #0B1316 !important;
+}
+main.index-catalog .catalog-open {
+  background: rgba(5,9,12,0.8);
+  border-bottom: 1px solid #0B1316;
+}
+main.index-catalog .post-details {
+  padding-bottom: 0.8em;
+}
+main.index-catalog .post-detail.post-subject {
+  padding: 0 0.5em;
+}
+main.index-catalog .post-detail.post-stats, main.index-catalog .post-detail.post-actions, main.index-catalog .post-detail.post-subject {
+  margin: 0;
+}
+main.index-catalog .index-threads {
+  margin: 0 !important;
+  padding: 0px 25px !important;
+}
+main.index-catalog .thread-list {
+  border: 1px solid rgba(11, 19, 22, 0.9) !important;
+}
+main .index-sidebar { /* REMOVE catalog hack */
+  position: fixed !important;
+  z-index: 990;
+  height: 16px !important;
+  line-height: 16px;
+  display: block;
+  width: 100% !important;
+  top: 0 !important;
+  background: rgba(9, 13, 15, 0.8);
+  padding: 0 5px 0 58px !important;
+  margin: 0;
+}
