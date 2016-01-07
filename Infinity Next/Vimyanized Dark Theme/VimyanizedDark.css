@@ -54,13 +54,13 @@ main {
 }
 /* Compact Threads */
 .post-content::after{
-    content: none;
+  content: none;
 }
-.post-container.op-container, .op-container .post-content-wrapper {
-    display: inline;
+.op-container .post-content-wrapper {
+  display: inline;
 }
 .thread-interior{
-    clear: both;
+  clear: both;
 }
 /* Post Form */
 #post-form {
@@ -650,4 +650,11 @@ main .index-sidebar { /* REMOVE catalog hack */
   background: rgba(9, 13, 15, 0.8);
   padding: 0 5px 0 58px !important;
   margin: 0;
+}
+
+/* Overboard */
+div.post-crown {
+  background: rgba(5,9,12,0.8);
+  border-top: 1px solid rgba(11,19,22,.9);
+  clear: both;
 }
