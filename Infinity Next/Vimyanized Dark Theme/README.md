@@ -11,12 +11,12 @@ Styled pages:
  * Board Index
  * Threads
  * Catalog (hacky)
+ * Boardslist
  * Board Logs
  * Options and Boardslist popups
  * Overboard
 
 Pages TODO:
- * Boardslist
  * Control Panel
  * Post edit
  * Ban submit and receive
