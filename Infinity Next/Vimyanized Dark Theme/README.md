@@ -7,14 +7,14 @@ This theme is live on the [/testing/ board](https://beta.8ch.net/testing) on 8ch
 ![Vimyanized Dark Preview](http://a.pomf.cat/ctwchm.gif "Vimyanized Dark Preview")
 
 Styled pages:
+ * Homepage
  * Board Index
  * Threads
+ * Catalog (hacky)
  * Board Logs
  * Options and Boardslist popups
- * Catalog (hacky)
  * Overboard
 
 Pages TODO:
- * Homepage
  * Boardslist
  * Control Panel

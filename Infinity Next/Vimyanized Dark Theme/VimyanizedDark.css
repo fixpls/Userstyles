@@ -28,9 +28,17 @@ body {
 main {
   background: #000;
   padding: 0;
+  height: 100%;
+}
+.smooth-box {
+  margin-top: 3em;
+  background: rgba(13, 17, 20, 0.5);
+  border: 1px solid #0B1316;
+  border-radius: 0px;
 }
 .index-threads {
   background: #090D0F;
+  height: 100%;
 }
 .thread-list {
   padding-top: 30px !important; /* REMOVE when there's something above the thread */
@@ -172,6 +180,13 @@ blockquote.ugc {
 }
 .post-detail.detail-icon .fa {
   color: #0EF;
+}
+.reply-container .post-metas {
+  background: rgba(5,9,12,0.8);
+  border-top: 1px solid #0B1316;
+}
+.meta-ban_reason {
+  color: #F00 !important;
 }
 /* Post Formatting */
 .post blockquote p {
@@ -481,7 +496,6 @@ footer .pagination.pagination-full.pagination-catalog {
   padding: 0;
   background: rgba(9,13,15,0.8);
   margin: 0 !important;
-  margin-bottom: -0.2em !important;
 }
 footer .buttons-pages, footer .pagination-pages, footer div.pagination-buttons {
   display: inline-block !important;
@@ -503,6 +517,10 @@ footer .buttons-after .pagination-button, footer .buttons-before .pagination-but
 }
 footer .pagination-button:disabled {
   color: #FFF !important;
+  margin: 0;
+}
+footer .pagination-button:not(:disabled) {
+  line-height: 1.6em;
 }
 footer ul.pagination-pages::before, footer ul.pagination-pages::after, footer li.pagination-page::after {
   color: #34345C !important;
@@ -591,12 +609,6 @@ div.post-container { /* fixes link+backlink jump offset */
 }
 
 /* Board Logs */
-.board-logs .smooth-box {
-  margin-top: 3em;
-  background: rgba(13, 17, 20, 0.5);
-  border: 1px solid #0B1316;
-  border-radius: 0px;
-}
 .board-logs thead {
   background: rgba(1, 5, 8, 0.8);
   border: 1px solid #0B1316;
@@ -639,7 +651,7 @@ main.index-catalog .index-threads {
 main.index-catalog .thread-list {
   border: 1px solid rgba(11, 19, 22, 0.9) !important;
 }
-main .index-sidebar { /* REMOVE catalog hack */
+main .index-sidebar, main #site-info:after { /* REMOVE catalog hack */
   position: fixed !important;
   z-index: 990;
   height: 16px !important;
@@ -647,9 +659,11 @@ main .index-sidebar { /* REMOVE catalog hack */
   display: block;
   width: 100% !important;
   top: 0 !important;
+  left: 0;
   background: rgba(9, 13, 15, 0.8);
   padding: 0 5px 0 58px !important;
   margin: 0;
+  content: "";
 }
 
 /* Overboard */
@@ -657,4 +671,46 @@ div.post-crown {
   background: rgba(5,9,12,0.8);
   border-top: 1px solid rgba(11,19,22,.9);
   clear: both;
+}
+
+/* Homepage */
+main#frontpage {
+  padding-top: 20px !important;
+}
+main#frontpage #site-warning {
+  text-shadow: none;
+}
+main#frontpage .infobox  {
+  background: rgba(13, 17, 20, 0.5);
+  border: 1px solid #0B1316;
+  border-radius: 0px;
+}
+main#frontpage .infobox-title {
+  background: rgba(1, 5, 8, 0.8);
+  border-bottom: 1px solid #0B1316 !important;
+  color: #F8F8F8;
+}
+main#frontpage .post-details {
+  border-top: 1px solid #0B1316;
+}
+main#frontpage #site-recent-images h2, main#frontpage #site-recent-posts h2 {
+  border-bottom: 1px solid #0B1316 !important;
+}
+main#frontpage .recent-images {
+  background: transparent;
+}
+main#frontpage .recent-post-link, main#frontpage .recent-post-link:hover, main#frontpage .recent-post:hover {
+  background-image: none !important;
+}
+main#frontpage .recent-post {
+  border: 1px solid rgba(11, 19, 22, 0.45) !important;
+}
+main#frontpage .recent-post:hover {
+  background: #090D0F;
+}
+main#frontpage blockquote.post {
+  border-bottom: none !important;
+}
+main#frontpage .recent-post-link.recent-post-op {
+  border-top: 0.25em solid #53BDB1;
 }
