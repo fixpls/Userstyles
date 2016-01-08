@@ -30,6 +30,10 @@ main, div#page-container {
   padding: 0;
   height: 100%;
 }
+main#frontpage, main#boardlist {
+  background: rgba(13,17,20,.5);
+  padding-top: 20px !important;
+}
 .smooth-box {
   margin-top: 3em;
   background: rgba(13, 17, 20, 0.5);
@@ -608,13 +612,29 @@ div.post-container { /* fixes link+backlink jump offset */
   margin-top: -20px;
 }
 
-/* Board Logs */
+/* Board Logs and Boardslist */
 .board-logs thead {
   background: rgba(1, 5, 8, 0.8);
-  border: 1px solid #0B1316;
+}
+.board-logs table thead th {
+  border-bottom: 1px solid #0B1316;
 }
 .board-logs tr {
   border: 1px solid #0B1316;
+}
+.board-logs table tbody tr:nth-child(2n), main#boardlist table tbody tr:nth-child(2n) {
+  background: rgba(13,17,20,.9);
+  background-image: linear-gradient(rgba(9,13,16,0.8), rgba(9,13,16,0.8));
+}
+main#boardlist table thead.board-list-head tr, main#boardlist tbody tr {
+  background: rgba(1, 5, 8, 0.8);
+}
+main#boardlist table thead.board-list-head tr th {
+  border: none;
+}
+main#boardlist tbody tr {
+  border-top: 1px solid #0B1316;
+  border-bottom: 1px solid #0B1316;
 }
 
 /* Catalog */
@@ -674,19 +694,15 @@ div.post-crown {
 }
 
 /* Homepage */
-main#frontpage {
-  background: rgba(13,17,20,.5);
-  padding-top: 20px !important;
-}
 main#frontpage #site-warning {
   text-shadow: none;
 }
-main#frontpage .infobox  {
+main#frontpage .infobox, main#boardlist .infobox {
   background: rgba(13, 17, 20, 0.5);
   border: 1px solid #0B1316;
   border-radius: 0px;
 }
-main#frontpage .infobox-title {
+main#frontpage .infobox-title, main#boardlist .infobox-title {
   background: rgba(1, 5, 8, 0.8);
   border-bottom: 1px solid #0B1316 !important;
   color: #F8F8F8;
