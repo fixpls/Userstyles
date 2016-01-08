@@ -18,3 +18,5 @@ Styled pages:
 Pages TODO:
  * Boardslist
  * Control Panel
+ * Post edit
+ * Ban submit and receive
