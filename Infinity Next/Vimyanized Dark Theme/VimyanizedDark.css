@@ -675,6 +675,7 @@ div.post-crown {
 
 /* Homepage */
 main#frontpage {
+  background: rgba(13,17,20,.5);
   padding-top: 20px !important;
 }
 main#frontpage #site-warning {
